@@ -35,7 +35,7 @@ export function About() {
         <StaggerGroup className="mx-auto mt-14 max-w-2xl divide-y divide-[var(--border-glass)] sm:grid sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {stats.map(({ label, value }) => (
             <StaggerItem key={label} direction="scale">
-              <div className="flex items-center justify-between gap-4 py-4 sm:flex-col sm:justify-center sm:gap-1 sm:px-3 sm:py-0 sm:text-center">
+              <div className="flex flex-row-reverse items-center justify-between gap-4 py-4 sm:flex-col sm:justify-center sm:gap-1 sm:px-3 sm:py-0 sm:text-center">
                 <p className="whitespace-nowrap font-mono text-xl font-semibold text-gradient sm:text-2xl">
                   {value}
                 </p>

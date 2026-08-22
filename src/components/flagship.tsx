@@ -28,9 +28,10 @@ export function Flagship() {
           <p className="relative mx-auto mt-6 max-w-xl text-lg leading-8 text-foreground-muted">
             A platform designed to bring communities together — discover
             what&apos;s happening locally, join conversations, connect with
-            neighbors, find local services, create events, and support
-            community initiatives. Under the hood, AI helps surface what
-            matters most to each neighborhood, right when it matters.
+            neighbors, find local services, complete neighborhood missions,
+            and raise petitions for the things that matter. Under the hood,
+            AI helps surface what matters most to each neighborhood, right
+            when it matters.
           </p>
 
           <StaggerGroup className="relative mx-auto mt-8 grid max-w-md grid-cols-1 gap-3 text-left sm:grid-cols-2">

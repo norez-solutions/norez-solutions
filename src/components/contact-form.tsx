@@ -2,9 +2,10 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, type FormEvent } from "react";
+import { submitContactForm } from "./contact-form-actions";
 import { Reveal } from "./motion/reveal";
 
-type Status = "idle" | "submitting" | "success";
+type Status = "idle" | "submitting" | "success" | "error";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -14,10 +15,15 @@ export function ContactForm() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("submitting");
-    // Not wired to a real inbox yet — no email provider/domain configured.
-    // Swap this for a POST to an API route (e.g. Resend) once one exists.
-    await new Promise((resolve) => setTimeout(resolve, 1100));
-    setStatus("success");
+
+    const formData = new FormData(event.currentTarget);
+    const result = await submitContactForm({
+      name: String(formData.get("name") ?? ""),
+      email: String(formData.get("email") ?? ""),
+      message: String(formData.get("message") ?? ""),
+    });
+
+    setStatus(result.ok ? "success" : "error");
   }
 
   return (
@@ -112,6 +118,13 @@ export function ContactForm() {
                       className="w-full resize-none rounded-xl border border-[var(--border-glass)] bg-white/[0.02] px-4 py-3 text-foreground outline-none transition-all duration-300 placeholder:text-foreground-muted/50 focus:border-accent-cyan/60 focus:shadow-[0_0_30px_-10px_rgba(34,211,238,0.5)]"
                     />
                   </div>
+
+                  {status === "error" ? (
+                    <p className="text-sm text-red-400">
+                      Something went wrong sending that — try again, or email
+                      us directly in the meantime.
+                    </p>
+                  ) : null}
 
                   <button
                     type="submit"

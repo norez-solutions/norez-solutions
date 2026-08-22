@@ -26,7 +26,7 @@ export function Nav() {
         open
           ? "border-[var(--border-glass)] bg-background-elevated"
           : scrolled
-            ? "glass"
+            ? "border-[var(--border-glass)] bg-background/85 backdrop-blur-xl"
             : "border-transparent bg-background/40 backdrop-blur-md"
       }`}
     >

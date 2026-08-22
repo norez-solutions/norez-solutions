@@ -45,6 +45,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.5, ease: EASE }}
+        className="mb-16 sm:mb-0"
       >
         <a
           href="#flagship"
