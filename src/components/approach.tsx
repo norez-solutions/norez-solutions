@@ -38,7 +38,7 @@ export function Approach() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-foreground-muted">
             We believe the best products start with real problems. Rather
             than building technology for the sake of technology, we focus on
-            understanding how people communicate, connect, and interact,
+            understanding how people communicate, connect, and interact —
             then build tools that make those experiences better.
           </p>
         </Reveal>

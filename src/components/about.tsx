@@ -25,7 +25,7 @@ export function About() {
         <Reveal delay={0.2}>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-foreground-muted">
             Norez Solutions is founder-led and intentionally small. We design,
-            build, and ship every product ourselves: no hand-offs, no
+            build, and ship every product ourselves — no hand-offs, no
             bloated roadmaps. Just people building things they&apos;d
             genuinely want to use, and taking the time to get the details
             right before anything ships.

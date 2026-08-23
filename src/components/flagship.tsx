@@ -26,7 +26,7 @@ export function Flagship() {
           </h3>
 
           <p className="relative mx-auto mt-6 max-w-xl text-lg leading-8 text-foreground-muted">
-            A platform designed to bring communities together: discover
+            A platform designed to bring communities together — discover
             what&apos;s happening locally, join conversations, connect with
             neighbors, find local services, complete neighborhood missions,
             and raise petitions for the things that matter. Under the hood,

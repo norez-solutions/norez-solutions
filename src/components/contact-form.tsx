@@ -83,7 +83,7 @@ export function ContactForm() {
                     Message sent
                   </h3>
                   <p className="max-w-sm text-foreground-muted">
-                    Thanks for reaching out. We&apos;ll get back to you soon.
+                    Thanks for reaching out — we&apos;ll get back to you soon.
                   </p>
                   <button
                     onClick={() => setStatus("idle")}
@@ -121,7 +121,7 @@ export function ContactForm() {
 
                   {status === "error" ? (
                     <p className="text-sm text-red-400">
-                      Something went wrong sending that. Try again, or email
+                      Something went wrong sending that — try again, or email
                       us directly in the meantime.
                     </p>
                   ) : null}
