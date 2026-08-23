@@ -2,19 +2,24 @@ import { Reveal, StaggerGroup, StaggerItem } from "./motion/reveal";
 
 const principles = [
   {
-    title: "Simple",
-    description: "Technology should feel intuitive.",
+    number: "01",
+    title: "Discover",
+    description:
+      "We start by understanding the real problem and the people we're building for.",
     color: "#22d3ee",
   },
   {
-    title: "Useful",
-    description: "Every feature should solve a real problem.",
+    number: "02",
+    title: "Design",
+    description:
+      "We map out simple, intuitive experiences before a single line of code gets written.",
     color: "#8b5cf6",
   },
   {
-    title: "Thoughtful",
+    number: "03",
+    title: "Build",
     description:
-      "We care about the details that turn an idea into a product people want to use.",
+      "We build quickly on solid foundations, creating products that are made to last.",
     color: "#ec4899",
   },
 ];
@@ -33,17 +38,23 @@ export function Approach() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-foreground-muted">
             We believe the best products start with real problems. Rather
             than building technology for the sake of technology, we focus on
-            understanding how people communicate, connect, and interact —
+            understanding how people communicate, connect, and interact,
             then build tools that make those experiences better.
           </p>
         </Reveal>
 
         <StaggerGroup className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-3">
-          {principles.map(({ title, description, color }) => (
+          {principles.map(({ number, title, description, color }) => (
             <StaggerItem key={title}>
               <div className="group">
+                <p
+                  className="font-mono text-sm font-semibold tracking-[0.2em] text-foreground-muted"
+                  style={{ color }}
+                >
+                  {number}
+                </p>
                 <div
-                  className="mx-auto h-1 w-10 rounded-full transition-all duration-500 ease-out group-hover:w-16"
+                  className="mx-auto mt-3 h-1 w-10 rounded-full transition-all duration-500 ease-out group-hover:w-16"
                   style={{ backgroundColor: color }}
                 />
                 <h3 className="mt-4 font-display text-xl font-medium">
