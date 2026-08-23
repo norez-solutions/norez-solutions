@@ -17,14 +17,16 @@ export function Flagship() {
         <div className="glow-ring glass relative mx-auto max-w-3xl overflow-hidden rounded-3xl p-10 text-center sm:p-16">
           <div className="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-accent-cyan/20 blur-[100px]" />
 
-          <motion.span
-            animate={{ opacity: [0.5, 1, 0.5] }}
-            transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute right-5 top-5 z-10 inline-flex items-center gap-2 rounded-full bg-accent-violet/10 px-3 py-1.5 text-xs font-medium text-accent-violet sm:right-6 sm:top-6"
-          >
-            <span className="h-1.5 w-1.5 rounded-full bg-accent-violet" />
-            Coming soon
-          </motion.span>
+          <div className="relative z-10 mb-4 flex justify-center sm:absolute sm:right-6 sm:top-6 sm:mb-0 sm:block sm:justify-start">
+            <motion.span
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+              className="inline-flex items-center gap-2 rounded-full bg-accent-violet/10 px-3 py-1.5 text-xs font-medium text-accent-violet"
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-accent-violet" />
+              Coming soon
+            </motion.span>
+          </div>
 
           <span className="relative inline-flex items-center gap-2 rounded-full border border-[var(--border-glass)] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-foreground-muted">
             Currently building
@@ -59,7 +61,7 @@ export function Flagship() {
               href="https://www.community-copilot.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 rounded-full border border-[var(--border-glass)] px-5 py-2.5 text-sm font-medium text-foreground transition-colors duration-300 hover:border-accent-cyan/60 hover:text-accent-cyan"
+              className="group inline-flex items-center gap-1.5 rounded-full border border-[var(--border-glass)] px-5 py-2 text-sm font-medium text-foreground transition-all duration-300 hover:scale-105 hover:border-accent-cyan/60 hover:shadow-[0_0_24px_-4px_rgba(34,211,238,0.5)]"
             >
               Take a look
               <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
