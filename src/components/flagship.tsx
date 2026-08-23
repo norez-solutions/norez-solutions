@@ -17,6 +17,15 @@ export function Flagship() {
         <div className="glow-ring glass relative mx-auto max-w-3xl overflow-hidden rounded-3xl p-10 text-center sm:p-16">
           <div className="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-accent-cyan/20 blur-[100px]" />
 
+          <motion.span
+            animate={{ opacity: [0.5, 1, 0.5] }}
+            transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute right-5 top-5 z-10 inline-flex items-center gap-2 rounded-full bg-accent-violet/10 px-3 py-1.5 text-xs font-medium text-accent-violet sm:right-6 sm:top-6"
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-violet" />
+            Coming soon
+          </motion.span>
+
           <span className="relative inline-flex items-center gap-2 rounded-full border border-[var(--border-glass)] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-foreground-muted">
             Currently building
           </span>
@@ -45,23 +54,14 @@ export function Flagship() {
             ))}
           </StaggerGroup>
 
-          <div className="relative mt-8 flex flex-wrap items-center justify-center gap-4">
-            <motion.span
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
-              className="inline-flex items-center gap-2 rounded-full bg-accent-violet/10 px-4 py-2 text-sm font-medium text-accent-violet"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-accent-violet" />
-              Coming soon
-            </motion.span>
-
+          <div className="relative mt-8 flex justify-center">
             <a
               href="https://www.community-copilot.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 text-sm font-medium text-accent-cyan transition-colors duration-300 hover:text-accent-violet"
+              className="group inline-flex items-center gap-1.5 rounded-full border border-[var(--border-glass)] px-5 py-2.5 text-sm font-medium text-foreground transition-colors duration-300 hover:border-accent-cyan/60 hover:text-accent-cyan"
             >
-              community-copilot.com
+              Take a look
               <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                 ↗
               </span>
