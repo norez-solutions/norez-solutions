@@ -21,7 +21,7 @@ const principles = [
 
 export function Approach() {
   return (
-    <section id="approach" className="px-6 py-32">
+    <section id="approach" className="px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-4xl text-center">
         <Reveal>
           <h2 className="text-sm font-medium uppercase tracking-[0.3em] text-foreground-muted">

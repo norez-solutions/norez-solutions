@@ -29,7 +29,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="px-6 py-32">
+    <section id="process" className="px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-5xl">
         <Reveal className="text-center">
           <h2 className="text-sm font-medium uppercase tracking-[0.3em] text-foreground-muted">

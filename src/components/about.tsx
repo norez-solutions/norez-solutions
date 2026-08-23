@@ -8,7 +8,7 @@ const stats = [
 
 export function About() {
   return (
-    <section id="about" className="px-6 py-32">
+    <section id="about" className="px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
           <h2 className="text-sm font-medium uppercase tracking-[0.3em] text-foreground-muted">

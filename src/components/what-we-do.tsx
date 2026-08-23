@@ -38,7 +38,7 @@ const capabilities = [
 
 export function WhatWeDo() {
   return (
-    <section id="what-we-do" className="px-6 py-32">
+    <section id="what-we-do" className="px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <h2 className="text-sm font-medium uppercase tracking-[0.3em] text-foreground-muted">

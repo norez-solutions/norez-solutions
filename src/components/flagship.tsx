@@ -12,7 +12,7 @@ const features = [
 
 export function Flagship() {
   return (
-    <section id="flagship" className="px-6 py-32">
+    <section id="flagship" className="px-6 py-16 sm:py-20">
       <Reveal direction="scale">
         <div className="glow-ring glass relative mx-auto max-w-3xl overflow-hidden rounded-3xl p-10 text-center sm:p-16">
           <div className="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-accent-cyan/20 blur-[100px]" />
