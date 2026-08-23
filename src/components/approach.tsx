@@ -2,24 +2,19 @@ import { Reveal, StaggerGroup, StaggerItem } from "./motion/reveal";
 
 const principles = [
   {
-    number: "01",
-    title: "Discover",
-    description:
-      "We start by understanding the real problem and the people we're building for.",
+    title: "Simple",
+    description: "Technology should feel intuitive.",
     color: "#22d3ee",
   },
   {
-    number: "02",
-    title: "Design",
-    description:
-      "We map out simple, intuitive experiences before a single line of code gets written.",
+    title: "Useful",
+    description: "Every feature should solve a real problem.",
     color: "#8b5cf6",
   },
   {
-    number: "03",
-    title: "Build",
+    title: "Thoughtful",
     description:
-      "We build quickly on solid foundations, creating products that are made to last.",
+      "We care about the details that turn an idea into a product people want to use.",
     color: "#ec4899",
   },
 ];
@@ -44,17 +39,11 @@ export function Approach() {
         </Reveal>
 
         <StaggerGroup className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-3">
-          {principles.map(({ number, title, description, color }) => (
+          {principles.map(({ title, description, color }) => (
             <StaggerItem key={title}>
               <div className="group">
-                <p
-                  className="font-mono text-sm font-semibold tracking-[0.2em] text-foreground-muted"
-                  style={{ color }}
-                >
-                  {number}
-                </p>
                 <div
-                  className="mx-auto mt-3 h-1 w-10 rounded-full transition-all duration-500 ease-out group-hover:w-16"
+                  className="mx-auto h-1 w-10 rounded-full transition-all duration-500 ease-out group-hover:w-16"
                   style={{ backgroundColor: color }}
                 />
                 <h3 className="mt-4 font-display text-xl font-medium">

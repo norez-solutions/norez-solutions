@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Discover",
     description:
-      "We start by understanding the real problem people have, not the feature we want to build.",
+      "We start by understanding the real problem and the people we're building for.",
   },
   {
     number: "02",
@@ -17,7 +17,7 @@ const steps = [
     number: "03",
     title: "Build",
     description:
-      "We build fast on solid foundations, so what ships today still holds up next year.",
+      "We build quickly on solid foundations, creating products that are made to last.",
   },
   {
     number: "04",
